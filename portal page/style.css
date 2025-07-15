@@ -1,0 +1,167 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #E8F1F8;
+  color: #0A1A2F;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #0A1A2F;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 1;
+  height: 200px;
+}
+
+header h1 {
+  grid-column: 2;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  background-color: #33475B;
+  height: 60px;          
+  display: flex;         
+  align-items: center;    
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;                    
+}
+
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 5%;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.description {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.description p {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.description p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.description p::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+.description p::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+
+footer {
+  background-color: #0A1A2F;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
